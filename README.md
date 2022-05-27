@@ -3,15 +3,20 @@ Code for smartbulb made from scratch based around the ESP32 board
 
 High level idea: Create a centralized server. Each bulb will act as a client node. 
 
- - [ ] Write client
-    - [ ] Bulb "driver" software
-    - [ ] Networking driver
- - [ ] Write server
-    - [ ] Just get it to talk to client
-    - [ ] Implement threading
- - [ ] Design packet structure
-    - [ ] Write documentation for packet
-    - [ ] Implement a function for creating a packet
+ - [ ] Write tester
+    - [ ] Unit tests
+    - [ ] Traces
+    - [ ] CLI flag that allows for testing mode
+
+ - [ ] Networking
+    - [x] Write client
+        - [x] Bulb "driver" software
+    - [ ] Write server
+        - [ ] Just get it to talk to client
+        - [ ] Implement threading
+    - [ ] Design packet structure
+        - [ ] Write documentation for packet
+        - [ ] Implement a function for creating a packet
 
 ---
 Long term:
