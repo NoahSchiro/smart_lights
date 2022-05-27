@@ -17,6 +17,11 @@ to the ESP32, this module will just print
 debug statements
 */
 void lbCommand(uint8_t red, uint8_t green, uint8_t blue){
+
+	//Bounds checking
+	if(red < 0 || red > 255) {printf("Red value out of bounds!\n");return;}
+	if(green < 0 || green > 255) {printf("Green value out of bounds!\n");return;}
+	if(blue < 0 || blue > 255) {printf("Blue value out of bounds!\n");return;}
 	
 	//Edge cases
 	if(red == 0 && green == 0 && blue == 0) {
