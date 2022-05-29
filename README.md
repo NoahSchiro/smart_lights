@@ -12,7 +12,7 @@ High level idea: Create a centralized server. Each bulb will act as a client nod
     - [x] Write client
         - [x] Bulb "driver" software
     - [ ] Write server
-        - [ ] Just get it to talk to client
+        - [x] Just get it to talk to client
         - [ ] Implement threading
     - [ ] Design packet structure
         - [ ] Write documentation for packet
