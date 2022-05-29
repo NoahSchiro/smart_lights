@@ -3,7 +3,7 @@
 
 #include <stdio.h>			//For networking
 #include <arpa/inet.h>		//For networking
-#include <unistd.h>			//For read networking function
+#include <unistd.h>			//For write networking function
 #include <stdint.h>			//For uint types
 #include <sys/socket.h>		//For socket creation
 #include <sys/types.h>		//For socket creation
@@ -13,14 +13,17 @@
 
 //Sets up connection to the server 
 //provided an IP and port number
-int netSetup(const char* ip, uint16_t port);
+int serverSetup();
+
+//Handles incoming connections
+int serverConnect(int*, int);
 
 //Reads data from the server
-void netRead();
+int serverWrite(int);
 
 //Destroys the connection to the
 //server and properly handles memory
 //Returns success or failure
-void netShutdown();
+void serverShutdown();
 
 #endif
